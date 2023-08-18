@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='cadastrar.css')}}">
+    <link rel="stylesheet" href="../static/cadastrar.css">
+    <title>Cadastro</title>
+    <link rel="shortcut icon" href="../assets/js-logo.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <img src="../assets/js-logo.png" class="logo" alt="Logo Jaqueline Silva">
+        <nav>
+            <a href="https://www.tiktok.com/@jaqueline.silva.web?_t=8ejIED8r94n&_r=1" target="_blank"><img src="../assets/tiktok-logo.png" class="redes-sociais" alt=""></a>
+            <a href="https://twitter.com/jaque_silva_web?s=20" target="_blank"><img src="../assets/twitter-logo.png" class="redes-sociais" alt=""></a>
+            <a href="https://instagram.com/jaqueline.silva_web?igshid=MzRlODBiNWFlZA==" target="_blank"><img src="../assets/instagram-logo.png" class="redes-sociais" alt=""></a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>CADASTRE SUA</h1>
+            <h2>NOTÍCIA</h2>
+            <form action="/cadastrar" method="post">
+                <div>
+                    <label for="titulo">SEU TÍTULO: </label>
+                    <input type="text" name="titulo" id="titulo">
+                </div>
+
+                <div>
+                    <label for="conteudo">SUA NOTÍCIA: </label>
+                    <textarea name="conteudo" id="conteudo" cols="30" rows="10"></textarea>
+                </div>
+
+                <input type="submit" value="Cadastrar" class="button">
+            </form>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --amarelo: #ffef82;
+    --azul: #9ed1cfaf;
+    --dourado: #9d8e25;
+}
+
+/* Cores
+amarelo do header: #FFEF82 com a opacidade por volta de uns 0.8
+section: é branca com opacidade baixa
+article: #9ED1CF
+as letras dos links: #9D8E25
+*/
+
+body {
+    font-family: 'Josefin Sans', sans-serif;
+    background-image: url(assets/papel-fundo.png);
+}
+
+/* Cabeçalho */
+
+header {
+    background-color: var(--amarelo);
+    display: flex;
+    justify-content: space-between;
+    padding: 13px 20px;
+    align-items: center;
+}
+
+.logo {
+    width: 110px;
+}
+
+header > nav {
+    display: flex;
+    gap: 30px;
+}
+
+header a:hover {
+    transform: scale(1.3);
+    transition: .4s;
+}
+
+.redes-sociais{
+    width: 30px;
+}
+
+/* Parte principal */
+
+/* Artigo de desrição da Jaqueline Silva */
+.section_artigos {
+    width: 80vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.section_descricao {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.artigo_descricao {
+    font-size: 22px;
+    background-color: var(--azul);
+    width: 50vw;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.artigo_descricao > div {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 15px;
+    align-items: center;
+    text-align: justify;
+}
+
+.artigo_descricao img {
+    width: 240px;
+}
+
+.aside_descricao nav {
+    display: flex;
+    flex-direction: column;
+    gap: 70px;
+    font-size: 22px;
+    text-align: center;
+    width: 200px;
+}
+
+summary {
+    cursor: pointer;
+}
+
+.aside_descricao ul {
+    font-size: 1em;
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+    flex-direction: column;
+    list-style: "ᐅ";
+}
+
+.aside_descricao ul ::marker {
+    font-size: 15px;
+}
+
+.aside_descricao a {
+    text-decoration: none;
+    color: var(--dourado)
+}
+
+.aside_descricao a:hover {
+    color: black;
+    transform: scale(1.3);
+    transition: transform .4s;
+}
+
+details {
+    color: var(--dourado);
+    display: flex;
+    flex-direction: column;
+    height: 30px;
+}
+
+/* Infográficos */
+
+article {
+    padding: 10px;
+    background-color: var(--azul);
+    border-radius: 15px;
+}
+
+.artigo_infografico {
+    display: flex;
+    justify-content: space-around;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.img-infografico {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Profissões */
+
+.titulo-profissoes{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.9em;
+}
+
+.artigo_profissoes p {
+    font-family: Arial, Helvetica, sans-serif;
+    text-indent: 20px;
+    text-align: justify;
+}

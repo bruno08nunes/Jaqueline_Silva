@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+</head>
+<body>
+    <h1>Notícias Cadastradas</h1>
+    <a href="/">Voltar</a>
+    {% if noticias %}
+        {% for noticia in noticias %}
+            <div>
+                <p>{{noticia.titulo}}</p>
+                <p>{{noticia.conteudo}}</p>
+            </div>
+        {% endfor %}
+    {% else %}
+            <p>Nenhuma notícia cadastrada.</p>
+    {% endif %}
+</body>
+</html>
