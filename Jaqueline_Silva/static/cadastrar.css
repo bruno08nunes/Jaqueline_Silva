@@ -91,7 +91,7 @@ h1 {
 
 h2 {
     font-size: 35px;
-    letter-spacing: 30px;
+    letter-spacing: 15px;
     text-align: center;
 }
 
@@ -146,7 +146,6 @@ section {
     display: flex;
     justify-content: center;
     gap: 90px;
-    align-items: center;
     padding: 20px 0px;
 }
 
@@ -173,10 +172,12 @@ section {
 .aside_descricao nav {
     display: flex;
     flex-direction: column;
-    gap: 70px;
+    justify-content: space-evenly;
+    gap: 30px;
     font-size: 22px;
     text-align: center;
     width: 200px;
+    height: 100%;
 }
 
 summary {
@@ -192,8 +193,9 @@ summary {
     list-style: "ᐅ";
 }
 
-.aside_descricao ul ::marker {
+.aside_descricao ::marker {
     font-size: 15px;
+    color: var(--dourado);
 }
 
 .aside_descricao a {
@@ -208,7 +210,6 @@ summary {
 }
 
 details {
-    color: var(--dourado);
     display: flex;
     flex-direction: column;
     height: 30px;
